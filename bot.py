@@ -187,12 +187,12 @@ def main():
     dp.add_handler(MessageHandler(Filters.text, random_query))
     dp.add_handler(CommandHandler('politics', politics))
 
-    # updater.start_webhook(listen="0.0.0.0",
-    #                       port=int(PORT),
-    #                       url_path=TOKEN)
-    # updater.bot.setWebhook('https://instant-news.herokuapp.com/' + TOKEN)
-    updater.start_polling()
-    updater.idle()
+    updater.start_webhook(listen="0.0.0.0",
+                          port=int(PORT),
+                          url_path=TOKEN)
+    updater.bot.setWebhook('https://instant-news.herokuapp.com/' + TOKEN)
+    # updater.start_polling()
+    # updater.idle()
 
 if __name__ == '__main__':
     main()

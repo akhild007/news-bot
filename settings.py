@@ -15,3 +15,4 @@ load_dotenv(dotenv_path=env_path)
 
 TOKEN = os.getenv("token")
 api_key = os.getenv("apiKey")
+PORT = int(os.environ.get('PORT', 5000))

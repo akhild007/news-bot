@@ -190,7 +190,7 @@ def main():
     # updater.start_webhook(listen="0.0.0.0",
     #                       port=int(PORT),
     #                       url_path=TOKEN)
-    # updater.bot.setWebhook('https://enigmatic-wildwood-28769.herokuapp.com/' + TOKEN)
+    # updater.bot.setWebhook('https://instant-news.herokuapp.com/' + TOKEN)
     updater.start_polling()
     updater.idle()
 
